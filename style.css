@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#container {
+  outline: 1px solid black;
+  height: 656px;
+  width: 656px;
+  margin: auto;
+  margin-bottom: 15px;
+
+}
+.unit {
+  outline: 1px solid red;
+  background-color: white;
+  float: left;
+}
