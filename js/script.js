@@ -1,16 +1,16 @@
 $(document).ready(function(){
-  createGrid(16*16);
+  createGrid(16 * 16);
   pixelate();
   reset();
   toggleOutline();
   newGrid();
 });
 
-function createGrid(numBlocks) {
-  for (i = 0; i < numBlocks; i++) {
+function createGrid(squares) {
+  for (i = 0; i < squares; i++) {
       $('#container').append("<div class='unit'></div>");
     }
-    newLength = $('#container').height() / Math.sqrt(numBlocks);
+    newLength = $('#container').height() / Math.sqrt(squares);
     $('.unit').height(newLength);
     $('.unit').width(newLength);
 }
@@ -31,7 +31,7 @@ function newGrid() {
 
 function pixelate() {
   $('.unit').mouseenter(function() {
-    $(this).css('background-color', 'black');
+    $(this).css('background-color', '#3D3D3D');
   })
 }
 

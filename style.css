@@ -1,11 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
 body {
   margin-top: 15px;
   text-align: center;
+  background-image: url(images/etch.png);
+  repeat: none;
 }
 
 #container {
@@ -17,7 +17,22 @@ body {
 
 }
 .unit {
-  outline: 1px solid red;
+  outline: 1px solid #D11400;
   background-color: white;
   float: left;
+}
+.userButtons {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  background-color: #CCCCCC;
+
+}
+.footText {
+  font-size: 3em;
+  font-family: 'Fjalla One', sans-serif;
+}
+.footSpan {
+  font-size: 0.5em;
+  font-family: 'Gloria Hallelujah', cursive;
+  padding-left: 20px;
 }
