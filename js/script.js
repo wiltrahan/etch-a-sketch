@@ -1,8 +1,7 @@
 $(document).ready(function(){
   createGrid(16 * 16);
-  pixelate();
-  reset();
-  toggleOutline();
+  colorUnits();
+  resetGrid();
   newGrid();
 });
 
@@ -24,29 +23,20 @@ function newGrid() {
     }
     $('#container').empty();
     createGrid(Math.pow(input,2));
-    pixelate();
+    colorUnits();
     return false;
   });
 }
 
-function pixelate() {
+function colorUnits() {
   $('.unit').mouseenter(function() {
     $(this).css('background-color', '#3D3D3D');
   })
 }
 
-function reset() {
+function resetGrid() {
   $('#userReset').click(function() {
     $('.unit').css('background-color', 'white');
     return false;
-  });
-}
-
-function toggleOutline() {
-  var state = false;
-  $(".toggle").on('click', function() {
-      $('.box').css("outline", state ? this.value : 'none');
-      state = !state;
-      return false;
   });
 }
